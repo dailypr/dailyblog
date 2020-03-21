@@ -33,7 +33,10 @@ Beginning...
 Add New Post
 1. add post
 2. hugo server and check locally 
-3. rm path/to/submodule -rf
-4. rm .git/modules/path/to/module -rf
-5. hugo -D
-
+3. rm -rf ~/Documents/0_git/dailyblog/dailyblog/public/
+4. rm -rf ~/Documents/0_git/dailyblog/.git/modules/dailyblog/public/
+5. git rm --cached public
+6. git submodule add -b master https://github.com/dailypr/dailypr.github.io.git public
+7. hugo -D 
+8. cd public  and push to git  ( git remote -v ) 
+9. cd ..  and push to git ( git remote -v )  
