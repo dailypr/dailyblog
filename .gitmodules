@@ -1,0 +1,3 @@
+[submodule "dailyblog/themes/hugo-refresh"]
+	path = dailyblog/themes/hugo-refresh
+	url = https://github.com/PippoRJ/hugo-refresh.git
