@@ -4,8 +4,9 @@ date: 2020-03-21
 tags: [hugo]
 ---
 
-Getting Started - Hugo 
+# Getting Started - Hugo 
 ---
+
 Beginning... 
 1. git clone https://github.com/dailypr/dailyblog.git  
 2. start from empty space  
@@ -21,16 +22,22 @@ Beginning...
 12. git submodule add -b master https://github.com/dailypr/dailypr.github.io.git public  
 13. hugo -D   
 14. cd public  and push to git  ( git remote -v )  
-> ➜  public git:(master) git remote -v
-> origin	https://github.com/dailypr/dailypr.github.io.git (fetch)
-> origin	https://github.com/dailypr/dailypr.github.io.git (push)
-15. cd ..  and push to git ( git remote -v )  
-> ➜  dailyblog git:(master) ✗ git remote -v
-> origin	https://github.com/dailypr/dailyblog.git (fetch)
-> origin	https://github.com/dailypr/dailyblog.git (push)
+```
+ ➜  public git:(master) git remote -v
+ origin	https://github.com/dailypr/dailypr.github.io.git (fetch)
+ origin	https://github.com/dailypr/dailypr.github.io.git (push)
+```
+15. cd ..  and push to git ( git remote -v ) 
+```
+ ➜  dailyblog git:(master) ✗ git remote -v
+ origin	https://github.com/dailypr/dailyblog.git (fetch)
+ origin	https://github.com/dailypr/dailyblog.git (push)
+``` 
 
+
+# Add New Post
 ---
-Add New Post
+
 1. add post
 2. hugo server and check locally 
 3. rm -rf ~/Documents/0_git/dailyblog/dailyblog/public/
@@ -40,3 +47,16 @@ Add New Post
 7. hugo -D 
 8. cd public  and push to git  ( git remote -v ) 
 9. cd ..  and push to git ( git remote -v )  
+
+
+
+# Script
+---
+
+```
+rm -rf ~/Documents/0_git/dailyblog/dailyblog/public/
+rm -rf ~/Documents/0_git/dailyblog/.git/modules/dailyblog/public/
+git rm --cached public
+git submodule add -b master https://github.com/dailypr/dailypr.github.io.git public
+hugo -D 
+```
