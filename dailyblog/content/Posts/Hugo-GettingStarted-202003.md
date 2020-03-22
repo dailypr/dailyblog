@@ -7,7 +7,6 @@ tags: [hugo]
 # Getting Started - Hugo 
 ---
 
-Beginning... 
 1. git clone https://github.com/dailypr/dailyblog.git  
 2. start from empty space  
 3. hugo new site dailyblog  
@@ -59,4 +58,8 @@ rm -rf ~/Documents/0_git/dailyblog/.git/modules/dailyblog/public/
 git rm --cached public
 git submodule add -b master https://github.com/dailypr/dailypr.github.io.git public
 hugo -D 
+cd public
+git add .
+git commit -m "release"
+git push origin mater
 ```
