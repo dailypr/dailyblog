@@ -3,7 +3,8 @@ title: "k8s - Managing Multi Clusters"
 date: 2020-03-22
 tags: [k8s]
 ---
-<h1>Basic Way</h1>
+
+# Basic Way
 ---
 
 1. Create config files in `~/.kube` folder.  
@@ -45,7 +46,7 @@ eks14-na03s_useast2
 ```
 
 
-<h1>Tool - kubectx</h1>
+# Tool - kubectx
 ---
 
 1. Install kubectx.  
