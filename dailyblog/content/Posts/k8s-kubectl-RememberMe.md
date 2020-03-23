@@ -17,7 +17,8 @@ kubectl get pods -o wide
 kubectl get pod my-pod -o yaml               
 kubectl describe pods my-pod  
 
-kubectl get services                      
+kubectl get services  
+kubectl get svc                    
 
 kubectl get deployment my-dep      
 
