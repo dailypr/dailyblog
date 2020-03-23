@@ -57,6 +57,9 @@ rm -rf ~/Documents/0_git/dailyblog/dailyblog/public/
 rm -rf ~/Documents/0_git/dailyblog/.git/modules/dailyblog/public/
 git rm --cached public
 git submodule add -b master https://github.com/dailypr/dailypr.github.io.git public
+cd public
+rm -rf *
+cd ..
 hugo -D 
 cd public
 git add .

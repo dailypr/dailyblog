@@ -20,4 +20,6 @@ kubectl describe pods my-pod
 kubectl get services                      
 
 kubectl get deployment my-dep      
-         
+
+kubectl get rs --all-namespaces
+
