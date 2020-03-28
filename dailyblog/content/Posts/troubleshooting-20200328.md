@@ -32,7 +32,7 @@ tags: [aws,network,troubleshooting]
 
     > Please note that the 4 IPs you shared: xx,xx,xx,xx , xx.xx.xx.xx , xx.xx.xx.xx  , xx.xx.xx.xx ,   
     > are stable IPs that the ELB can use if it needs to scale,   
-    > this doesn't mean that all 6 IPs are always in use,  <---------------  
+    > `this doesn't mean that all 6 IPs are always in use,`
     > this just means that if the ELB needs an IP it would pick from that pool of 6 IPs.  
 
 
