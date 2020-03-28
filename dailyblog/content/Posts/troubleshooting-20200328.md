@@ -40,12 +40,12 @@ xx.xx.xx.xx
 
 > I suspect that your clients either have bad dns behaviour (i.e cahing dns ips for long/not respecting the ttl) or they have hardcoded DNS values (e.g in the /etc/hosts file) or they have hardcoded IP addresses. 
 
-    - a) Get your client to do a dns lookup from the ssl failing maching and see the IP address returned, use the below:   
+a) Get your client to do a dns lookup from the ssl failing maching and see the IP address returned, use the below:   
 
 `$ dig xxx alb dns address xxxxx  +short`  
 
-    - b) If a) above shows the 2 current running ELB IPs then can you get your client to run a packet capture when trying to do the ssl handshake ? Use the below: 
-    (Example: sudo  tcpdump host google.com and port 443 -w ssl.pcap)   
+b) If a) above shows the 2 current running ELB IPs then can you get your client to run a packet capture when trying to do the ssl handshake ? Use the below:   
+(Example: sudo  tcpdump host google.com and port 443 -w ssl.pcap)    
 
 `sudo  tcpdump host {dns name used to reach alb} and port 443 -w ssl.pcap`  
 
