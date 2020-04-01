@@ -16,3 +16,10 @@ git remote add upstream ...
 
 git submodule add ... ...  
 git submodule add -b master ... ...  
+
+# git user configuration
+
+git config --list
+git config user.name "xxxx"
+git config user.email "xxxx"
+git clone https://xxxxx@github.com/xxxxx/xxxxxx.git
